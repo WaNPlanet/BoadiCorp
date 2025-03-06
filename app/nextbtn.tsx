@@ -5,11 +5,11 @@ import { useState } from "react";
 
 export default function Home() {
   const [text, setText] = useState(
-    "At Boadi Corp., we understand that every industry has unique logistics challenges. That’s why we offer customized solutions for a wide range of sectors."
+    "At Boadi Corp., we understand that every industry has unique logistics challenges. That&apos;s why we offer customized solutions."
   );
 
   const texts = [
-    "At Boadi Corp., we understand that every industry has unique logistics challenges. That’s why we offer customized solutions for a wide range of sectors.",
+    "At Boadi Corp., we understand that every industry has unique logistics challenges. That&apos;s why we offer customized solutions.",
     "Our logistics solutions are designed to optimize your supply chain, reduce costs, and improve efficiency.",
     "We provide tailored transportation services to ensure timely and secure deliveries across all industries.",
   ];

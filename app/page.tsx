@@ -57,7 +57,7 @@ export default function Home() {
         {/* Left Section - Header */}
         <div className="lg:w-1/2 lg:text-left">
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-900 leading-snug">
-            Let's Move Your <br /> Business Forward
+          That&apos;s  Move Your <br /> Business Forward
           </h1>
         </div>
 
