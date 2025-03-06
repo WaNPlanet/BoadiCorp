@@ -54,7 +54,7 @@ const Login = () => {
 
             {/* Image container */}
             <figure className="w-full max-h-130 flex justify-center">
-              <img
+              <Image
                 src="/p2.jpg"
                 alt="Album"
                 className="w-auto object-cover rounded-2xl"
