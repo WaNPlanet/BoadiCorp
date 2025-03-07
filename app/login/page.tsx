@@ -39,28 +39,35 @@ const Login = () => {
 
 
               <div className='mt-3'>
-                <p>Already a Member?<Link href="./signup"> SignIn</Link></p> 
+                <p>Already a Member?<Link href="./signup"> <span className='underline'>SignIn</span></Link></p> 
               </div>
-              <CloseButton/>
+           
+
+
             </div>
 
           </div>
         </div>
 
         {/* Right side - Image */}
-        <div className="relative order-first lg:order-first p-4 rounded-2xl">
-             {/* Close button positioned inside */}
-          
+          <div className="relative order-first lg:order-first p-4 rounded-2xl">
+            {/* Close button positioned inside */}
+            <div className="absolute top-4 left-5 z-10 bg-gray-800 text-white p-2 rounded-full hover:bg-red-500 transition">
+              <CloseButton />
+            </div>
+
 
             {/* Image container */}
             <figure className="w-full max-h-130 flex justify-center">
               <Image
                 src="/p2.jpg"
                 alt="Album"
+                width={500} // Set an appropriate width
+                height={300} // Set an appropriate height
                 className="w-auto object-cover rounded-2xl"
               />
             </figure>
-        </div>
+          </div>
 
 
       </div>

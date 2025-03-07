@@ -1,9 +1,77 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import CloseButton from './closebtn';
 
-const signup = () => {
+const SignUp = () => {
   return (
-    <div>signup</div>
-  )
-}
+    <div className="h-screen flex items-center justify-center px-4" style={{ background: "oklch(0.932 0.032 255.585)" }}>
+      <div className="w-full max-w-5xl min-h-[500px] max-h-screen mx-auto grid grid-cols-1 lg:grid-cols-2 bg-base-100 shadow-sm rounded-3xl overflow-auto">
+        
+        {/* Left side - Content */}
+        <div className="card-body flex items-center justify-center p-4">
+          <div className="w-full max-w-lg overflow-auto ">
+            <h2 className="flex justify-center card-title text-2xl">Let&apos;s Get Rolling!</h2>
+            <p className="flex justify-center">
+              Welcome to your home of all things. We are glad you are here.
+            </p>
 
-export default signup
+            <div className="space-y-4"> {/* Adds spacing between fields */}
+              
+
+              <fieldset className="fieldset p-3 border rounded-lg">
+                <legend className="fieldset-legend text-lg font-semibold">Your mail?</legend>
+                <input type="mail" className="input input-bordered w-full p-3 text-lg" placeholder="Type here" />
+              </fieldset>
+
+              <fieldset className="fieldset p-3 border rounded-lg">
+                <legend className="fieldset-legend text-lg font-semibold">Password?</legend>
+                <input type="password" className="input input-bordered w-full p-3 text-lg" placeholder="Type here" />
+              </fieldset>
+
+<br />
+              <div className="flex justify-center">
+                <button className="btn btn-wide btn-info">Submit</button>
+              </div>
+
+
+
+              <div className='mt-3'>
+                <p>New Here?<Link href="./signup"> <span className='underline'>SignUp</span></Link></p> 
+              </div>
+           
+
+
+            </div>
+
+          </div>
+        </div>
+
+        {/* Right side - Image */}
+        <div className="relative order-first lg:order-last p-4 rounded-2xl">
+
+            {/* Close button positioned inside */}
+            <div className="absolute top-4 left-5 z-10 bg-gray-800 text-white p-2 rounded-full hover:bg-red-500 transition">
+              <CloseButton />
+            </div>
+
+
+            {/* Image container */}
+            <figure className="w-full max-h-130 flex justify-center">
+              <Image
+                src="/p3.jpg"
+                alt="Album"
+                width={500} // Set an appropriate width
+                height={300} // Set an appropriate height
+                className="w-auto h-120 object-cover rounded-2xl"
+              />
+            </figure>
+          </div>
+
+
+      </div>
+    </div>
+  );
+};
+
+export default SignUp;

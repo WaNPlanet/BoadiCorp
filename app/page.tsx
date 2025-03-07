@@ -66,7 +66,7 @@ export default function Home() {
           <p className="text-base lg:text-lg text-gray-600">
             At Boadi Corp., we believe in pushing boundaries. From cutting-edge technology to seamless user experiences, our mission is to build solutions that inspire and drive progress.
           </p>
-          <Link href="./login" className="mt-4 inline-block px-5 py-2 bg-black text-white text-sm lg:text-base rounded-lg">
+          <Link href="./login" className="mt-2 inline-block px-5 py-2 bg-black text-white text-sm lg:text-base rounded-lg">
             Learn More
           </Link>
         </div>
